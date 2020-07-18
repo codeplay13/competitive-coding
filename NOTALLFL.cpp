@@ -15,12 +15,12 @@ int main() {
 	        while(r<n-1 and dist_flav<k){
 	            r++;
 	            if(flavs[a[r]]==0) dist_flav++;
-    	        flavs[a[r]]++;
-    	        if(dist_flav<k) ans=max(r-l+1, ans);
+		    flavs[a[r]]++;
+    	            if(dist_flav<k) ans=max(r-l+1, ans);
 	        }
 	        while(dist_flav==k){
 	            if(flavs[a[l]]==1) dist_flav--;
-    	        flavs[a[l]]--;
+    	            flavs[a[l]]--;
 	            l++;
 	        }
 	    }
