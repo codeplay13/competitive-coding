@@ -20,7 +20,6 @@ int main() {
 	    name_count[name]++;
 	    country_count[name_country[name]]++;
 	}
-	m = -1;
 	for(auto i: country_count){
 	    if(i.second>m){
 	        m = i.second;
