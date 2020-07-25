@@ -25,9 +25,7 @@ int main() {
 	        max = i.second;
 	        country = i.first;
 	    }
-	    else if(i.second==max){
-	        country = min(country, i.first);
-	    }
+	    else if(i.second==max) country = min(country, i.first);
 	}
 	max = -1;
 	for(auto i: name_count){
@@ -35,9 +33,7 @@ int main() {
 	        max = i.second;
 	        name = i.first;
 	    }
-	    else if(i.second==max){
-	        name = min(name, i.first);
-	    }
+	    else if(i.second==max) name = min(name, i.first);
 	}
 	cout<<country<<"\n"<<name;
 	return 0;
