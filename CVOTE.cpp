@@ -27,13 +27,12 @@ int main() {
 	    }
 	    else if(i.second==m) country = min(country, i.first);
 	}
-	m = -1;
 	for(auto i: name_count){
-	    if(i.second>m){
-	        m = i.second;
+	    if(i.second>n){
+	        n = i.second;
 	        name = i.first;
 	    }
-	    else if(i.second==m) name = min(name, i.first);
+	    else if(i.second==n) name = min(name, i.first);
 	}
 	cout<<country<<"\n"<<name;
 	return 0;
