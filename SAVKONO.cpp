@@ -8,7 +8,7 @@ int main(){
     cin>>t;
     while(t--){
         // int n, z, a;
-        // vector<int> powers(10001, 0);
+        // vector<int> powers(10000, 0);
         // cin>>n>>z;
         // while(n--){
         //     cin>>a;
