@@ -6,10 +6,7 @@ void merge(vector<int> &L, vector<int> &R, vector<int> &S){
     int i=0, j=0;
     while(i<L.size() and j<R.size()){
         if(L[i]<=R[j]) S.push_back(L[i++]);
-        else{
-            ans += L.size()-i;
-            S.push_back(R[j++]);
-        }
+        else S.push_back(R[j++]);
     }
     while(i<L.size()) S.push_back(L[i++]);
     while(j<R.size()) S.push_back(R[j++]);
@@ -29,9 +26,6 @@ void merge_sort(int A[], int l, int r){
 }
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-	long long int ans = 0;
 	int n;
 	cin>>n;
 	int A[n];
