@@ -9,7 +9,7 @@ int main() {
 	    long long a[n], max_sum=0;
 	    for(int i=0;i<n;i++) cin>>a[i];
 	    for(int i=0;i<n;i++) max_sum = max(max_sum, a[(((i-1)%n)+n)%n]+a[i]+a[(i+1)%n]);
-      cout<<max_sum<<"\n";
+      	    cout<<max_sum<<"\n";
 	}
 	return 0;
 }
